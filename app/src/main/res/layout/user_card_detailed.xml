@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="userList"
+            type="com.example.assignment_test.model.UserData" />
+    </data>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/information_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardElevation="3dp"
+        app:cardMaxElevation="4dp"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="16sp"
+        android:layout_marginHorizontal="40sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="">
+
+            <!--        Title -->
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:text="Title" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/teal_200"
+                android:layout_marginLeft="10sp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/selected_sports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="05sp"
+                    android:text="@{userList.title}" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <!--        Description-->
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:text="Description" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/teal_200"
+                android:layout_marginLeft="10sp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/dateofslot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="05sp"
+                    android:text="@{userList.body}" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+<!--            &lt;!&ndash;        id&ndash;&gt;-->
+<!--            <com.google.android.material.textview.MaterialTextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10sp"-->
+<!--                android:text="id" />-->
+
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:backgroundTint="@color/teal_200"-->
+<!--                android:layout_marginLeft="10sp">-->
+
+<!--                <com.google.android.material.textview.MaterialTextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="05sp"-->
+<!--                    android:text="@{userList.id}" />-->
+
+<!--            </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--            &lt;!&ndash;        userid&ndash;&gt;-->
+<!--            <com.google.android.material.textview.MaterialTextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10sp"-->
+<!--                android:text="User Id" />-->
+
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:backgroundTint="@color/teal_200"-->
+<!--                android:layout_marginLeft="10sp">-->
+
+<!--                <com.google.android.material.textview.MaterialTextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="05sp"-->
+<!--                    android:text="@{userList.userId}" />-->
+
+<!--            </com.google.android.material.card.MaterialCardView>-->
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>
